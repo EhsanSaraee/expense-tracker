@@ -1,5 +1,11 @@
 const TransactionComp = ({ transactions }) => {
-   return <section>Transactions</section>;
+   return (
+      <section>
+         {transactions.map((transaction) => (
+            <div key={transaction.id}>{transaction.desc}</div>
+         ))}
+      </section>
+   );
 };
 
 export default TransactionComp;
