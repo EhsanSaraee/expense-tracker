@@ -1,10 +1,14 @@
 import './App.css';
+import ExpenseApp from './Components/ExpenseApp';
 
 const App = () => {
    return (
-      <section className="App">
-         <h2>Expense Tracker</h2>
-      </section>
+      <div className="App">
+         <header>
+            <h2>Expense Tracker</h2>
+            <ExpenseApp />
+         </header>
+      </div>
    );
 };
 
