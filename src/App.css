@@ -11,3 +11,26 @@
    padding-top: 30px;
    font-family: 'Montserrat', sans-serif;
 }
+
+.container {
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+   padding: 10px;
+   background-color: #fff;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.topSection {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+
+.resultSection {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
