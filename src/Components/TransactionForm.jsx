@@ -32,7 +32,7 @@ const TransactionForm = ({ addTransaction }) => {
             value={formValues.amount}
             placeholder="amount"
          />
-         <div>
+         <div className="radioBox">
             <input
                type="radio"
                id="expense"
