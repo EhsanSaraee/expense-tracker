@@ -17,10 +17,10 @@ const Overview = ({ income, expense, addTransaction }) => {
          {isShow && <TransactionForm addTransaction={addTransaction} />}
          <div className="resultSection">
             <div className="expenseBox">
-               Expense : <span className="red">{expense}</span>
+               Expense : <span className="red">{expense} $</span>
             </div>
             <div className="expenseBox">
-               Income : <span className="green">{income}</span>
+               Income : <span className="green">{income} $</span>
             </div>
          </div>
       </>
