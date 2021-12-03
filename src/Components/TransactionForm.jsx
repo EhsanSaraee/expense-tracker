@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const TransactionForm = ({ addTransaction }) => {
+const TransactionForm = ({ addTransaction, setIsShow }) => {
    const [formValues, setFormValues] = useState({
       type: 'expense',
       amount: '',
@@ -14,6 +14,7 @@ const TransactionForm = ({ addTransaction }) => {
    const submitHandler = (event) => {
       event.preventDefault();
       addTransaction(formValues);
+      setIsShow(false);
    };
 
    return (
