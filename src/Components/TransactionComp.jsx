@@ -24,22 +24,37 @@ const TransactionComp = ({ transactions }) => {
       transactionsFilterHandler(searchItem);
    }, [transactions]);
 
+   if (!transactions.length)
+      return <h4 className="isEmpty">Add some transactions...</h4>;
+
    return (
       <section>
-         <input type="text" value={searchItem} onChange={changeHandler} />
-         {filteredTransactions?.map((transaction) => (
-            <section
-               className="transaction"
-               key={transaction.id}
-               style={{
-                  borderRight:
-                     transaction.type === 'expense' && '5px solid red',
-               }}
-            >
-               <span>{transaction.desc}</span>
-               <span>${transaction.amount}</span>
-            </section>
-         ))}
+         <input
+            className="search"
+            type="text"
+            value={searchItem}
+            onChange={changeHandler}
+            placeholder="Search for Transactions"
+         />
+         {filteredTransactions.length ? (
+            filteredTransactions.map((transaction) => (
+               <section
+                  className="transaction"
+                  key={transaction.id}
+                  style={{
+                     borderRight:
+                        transaction.type === 'expense' && '5px solid red',
+                  }}
+               >
+                  <span>{transaction.desc}</span>
+                  <span>${transaction.amount}</span>
+               </section>
+            ))
+         ) : (
+            <h4 className="noMatch">
+               no item matches! please enter the correct name
+            </h4>
+         )}
       </section>
    );
 };

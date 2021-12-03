@@ -127,3 +127,25 @@ input[type='radio'] {
    justify-content: space-between;
    border-right: 5px solid green;
 }
+
+input.search {
+   display: block;
+   padding: 10px 12px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   background-color: #efefef;
+   width: 100%;
+   margin: 20px 0;
+}
+
+.isEmpty {
+   margin-top: 12px;
+   color: #6d28d9;
+   font-size: 14px;
+}
+
+.noMatch {
+   color: #dc2626;
+   font-weight: bold;
+   font-size: 14px;
+}
