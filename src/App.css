@@ -56,3 +56,31 @@
    font-weight: bold;
    color: green;
 }
+
+.btn {
+   color: #6d28d9;
+   outline: none;
+   padding: 5px 10px;
+   background-color: #ede9fe;
+   border: 1px solid #6d28d9;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.add {
+   color: #059669;
+   background-color: #fff;
+   border: 1px solid #059669;
+}
+
+.cancel {
+   color: #dc2626;
+   background-color: #fff;
+   border: 1px solid #dc2626;
+}
+
+.primary {
+   color: #fff;
+   background-color: #6d28d9;
+   border: none;
+}
