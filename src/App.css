@@ -34,3 +34,25 @@
    align-items: center;
    justify-content: space-between;
 }
+
+.expenseBox {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-between;
+   width: 135px;
+   height: 60px;
+   padding: 5px 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.expenseBox .red {
+   font-weight: bold;
+   color: red;
+}
+
+.expenseBox .green {
+   font-weight: bold;
+   color: green;
+}
