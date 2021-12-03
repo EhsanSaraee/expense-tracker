@@ -13,8 +13,12 @@ const Overview = ({ income, expense, addTransaction }) => {
          </div>
          {isShow && <TransactionForm addTransaction={addTransaction} />}
          <div className="resultSection">
-            <div>Expense : {expense}</div>
-            <div>Income : {income}</div>
+            <div className="expenseBox">
+               Expense : <span className='red'>{expense}</span>
+            </div>
+            <div className="expenseBox">
+               Income : <span className='green'>{income}</span>
+            </div>
          </div>
       </>
    );
